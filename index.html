@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#1877F2">
+<title>PIN Maker</title>
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DV-Piano: Studio Audio Instrument">
+  <meta property="og:description" content="Ultra-low latency acoustic piano and synthesizer instrument engineered exclusively for Android handheld touchscreens.">
+  <meta property="og:url" content="https://your-domain.com">
+  <meta property="og:image" content="https://your-domain.com/path-to-hosted-preview-image.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<h1>PIN Maker</h1>
+<p>One line per person: Name,PIN. Up to 20 people. Everything stays on your phone.</p>
+<div class="card">
+<textarea id="in" placeholder="Admin,7391&#10;Mary,4826&#10;John,1357"></textarea>
+<div class="warn" id="warn"></div>
+<button id="go">Generate</button>
+</div>
+<div class="card"><h2>1. Paste into lock.js</h2><p>Replace the whole USERS list.</p><pre id="o1"></pre><button class="cp" data-t="o1">Copy</button></div>
+<div class="card"><h2>2. Names for the sheet</h2><p>Paste into Access_Users, cell B2 (Name column).</p><pre id="o2"></pre><button class="cp" data-t="o2">Copy</button></div>
+<div class="toast" id="t"></div>
+<script src="app.js"></script>
+</body>
+</html>
